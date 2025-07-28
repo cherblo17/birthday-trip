@@ -189,20 +189,3 @@ header p {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
-
-@media screen and (max-width: 768px) {
-  /* スマホ画面サイズのときに適用したいCSSを書く */
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 例: 2列にする */
-  }
-
-  .title {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .message-box {
-    padding: 15px;
-  }
-}
