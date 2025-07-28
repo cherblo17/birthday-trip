@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 600;
+  background-image: url("img/akahuku-bg.jpg");
+  background-size: cover; /* 全画面に広げる */
+  background-position: center;
+  background-attachment: fixed; /* スクロールしても背景固定 */
+  color: #333;
+}
+
+nav {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  margin-top: auto;
+  font-size: 0.9em;
+  color: #888;
+}
+.map-container {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.map-container iframe {
+  display: block;
+}
+.map-container {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  margin: 0 0.5em;
+  position: relative;
+}
+
+nav a::after {
+  content: " |";
+  margin-left: 0.5em;
+  color: #999;
+}
+
+/* 最後のリンクの「｜」を非表示にする */
+nav a:last-child::after {
+  content: "";
+}
+.hotel-section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  background: rgba(240, 240, 240, 0.8); /* ← ここで白背景＋透明度 */
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.hotel-section h3 {
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+
+.hotel-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+header {
+  background-image: url('img/1175_11_org.jpg'); /* 画像名に合わせました */
+  background-size: cover;
+  background-position: center;
+  color: white; /* 文字は白 */
+  padding: 4em 1em;
+  text-align: center;
+  position: relative;
+}
+
+/* 文字が見やすくなる半透明の黒いフィルター */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* 黒いフィルター（透明度40%） */
+  z-index: 0;
+}
+
+/* ヘッダーの文字に影をつけて読みやすくする */
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2em;
+}
+
+
+.tag-btn {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.3em;
+  transition: 0.3s;
+}
+
+.tag-btn:hover {
+  background-color: #ccc;
+}
+
+.tag-btn.active {
+  background-color: #333;
+  color: white;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em; /* 画像間の余白 */
+  margin-top: 1em;
+}
+
+.image-row img {
+  max-width: 48%; /* ←これで画像が左右2枚並ぶサイズに */
+  border-radius: 10px;
+  height: auto;
+}
+.activity-section .image-row img {
+  max-width: 48% !important;
+}
+
+.message-box {
+  padding: 30px 20px; /* 横幅せまい時は左右余白を小さく */
+}
+
+@media (max-width: 600px) {
+  .message-box {
+    font-size: 1.1em;
+    line-height: 1.9;
+  }
+}
+.message-box {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

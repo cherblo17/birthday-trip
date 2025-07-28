@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アクティビティ｜MIE BIRTHDAY TRIP</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;600;800&display=swap" rel="stylesheet">
+   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .activity-section {
+      margin-bottom: 3em;
+      padding: 1em;
+      background: rgba(240, 240, 240, 0.8);
+      border-radius: 10px;
+      max-width: 800px;      /* 横幅制限を追加 */
+      margin-left: auto;     /* 中央寄せ */
+      margin-right: auto;
+    }
+    .activity-section h2 {
+      color: #000000;
+      margin-bottom: 0.5em;
+    }
+    .activity-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1em;
+    }
+    .menu {
+      background: rgba(240, 240, 240, 0.8);
+      padding: 1em;
+      border-radius: 10px;
+      margin-bottom: 2em;
+    }
+    .menu ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .menu ul li {
+      margin: 0.5em 0;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    nav {
+     background: #e0e0e0;
+     text-align: center;
+     padding: 10px 0;
+    }
+
+    nav a {
+     margin: 0 10px;
+     text-decoration: none;
+     color: #000000;
+     font-weight: bold;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e0e0e0;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-top:hover {
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ACTIVITY</h1>
+    <p>旅行で体験する楽しいこと、美味しいもの、ワクワクの予定！</p>
+  </header>
+
+   <nav>
+    <a href="index.html">TOP</a>
+    <a href="schedule.html">SCHEDULE</a>
+    <a href="hotel.html">HOTEL</a>
+    <a href="activity.html">ACTIVITY</a>
+    <a href="items.html">ITEMS</a>
+    <a href="members.html">MEMBER</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="message.html">MESSAGE</a>
+  </nav>
+
+  <div class="menu">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#nazo">⭐秘密の真珠と志摩ナゾ迷宮</a></li>
+      <li><a href="#hojoen">⭐賢島宝生苑</a></li>
+      <li><a href="#pool">⭐ベイサイドテラス プール</a></li>
+      <li><a href="#stars">⭐星空観察会</a></li>
+      <li><a href="#isejingu">⭐伊勢神宮</a></li>
+      <li><a href="#akafuku">⭐赤福</a></li>
+      <li><a href="#udon">⭐伊勢うどん ふくすけ</a></li>
+      <li><a href="#ebisei">⭐えび勢</a></li>
+      <li><a href="#nikodo">⭐二光堂寶来亭</a></li>
+      <li><a href="#VISON">⭐VISON</a></li>
+      <li><a href="#ebiya">⭐ゑびや大食堂</a></li>
+      <li><a href="#taiko">⭐太閤出世餅</a></li>
+      <li><a href="#ruburu">⭐ルーブル彫刻美術館</a></li>
+      <li><a href="#kadoya">⭐伊勢角屋麦酒 内宮前店</a></li>
+      <li><a href="#haikarasan">⭐はいからさん</a></li>
+      <li><a href="#yokoyama">⭐横山展望台</a></li>
+      <li><a href="#kawanishiya">⭐川西屋</a></li>
+      <li><a href="#morishita">⭐森下酒店 伊勢神宮前店</a></li>
+      <li><a href="#sarutahiko">⭐猿田彦神社</a></li>
+      <li><a href="#supein">⭐志摩スペイン村</a></li>
+      <li><a href="#buta">⭐豚捨</a></li>
+      <li><a href="#syoyu">⭐伊勢醤油本舗</a></li>
+      <li><a href="#honey">⭐はちみつ屋</a></li>
+      <li><a href="#oyatsu">⭐おやつタウン</a></li>
+      <li><a href="#katsu">⭐勝</a></li>
+      <li><a href="#kinoshita">⭐木下茶屋</a></li>
+      <li><a href="#imonne">⭐いもんね</a></li>
+      <li><a href="#isuzugawa">⭐五十鈴川カフェ</a></li>
+      <li><a href="#ebimaru">⭐海老丸</a></li>
+      <li><a href="#saiya">⭐蕎麦切り 才屋</a></li>
+      <li><a href="#saiya">⭐横丁そば 小西湖</a></li>
+    </ul>
+  </div>
+
+  <div class="tag-filter">
+   <button class="tag-btn active" data-tag="all">すべて</button>
+   <button class="tag-btn" data-tag="#1日目">#1日目</button>
+   <button class="tag-btn" data-tag="#2日目">#2日目</button>
+   <button class="tag-btn" data-tag="#観光スポット">#観光スポット</button>
+   <button class="tag-btn" data-tag="#食べ歩き">#食べ歩き</button>
+   <button class="tag-btn" data-tag="#昼食">#昼食</button>
+   <button class="tag-btn" data-tag="#お土産">#お土産</button>
+   <button class="tag-btn" data-tag="#カフェ">#カフェ</button>
+  </div>
+
+  <div class="activity-section" id="nazo" data-tags="#1日目">
+    <h2>秘密の真珠と志摩ナゾ迷宮</h2>
+    <p>近鉄電車×リアル謎解きゲーム。</p>
+    <p>街を歩いて謎を解く！制限時間なし。</p>
+    <p>所要時間は5時間程度。</p>
+    <p>5時間かかる、もりもりの内容みたい^_^ </p>
+    <p>ホテルも楽しみたいから、目標はサクサク解く!!!</p>
+    <p>ワクワク</p>
+    <p><strong>公式サイト：</strong><a href="https://nazotoki-zepets.com/shima-nazo2024/" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://nazotoki-zepets.com/shima-nazo2024/" target="_blank">MAP</a></p>
+    <div class="image-row">
+     <img src="img/nazo.jpg" alt="謎解き画像">
+    </div>
+  </div>
+
+  <div class="activity-section" id="hojoen" data-tags="#1日目 #観光スポット">
+    <h2>賢島宝生苑</h2>
+    <p>伊勢志摩温泉で謎解きの疲れをとろう〜！</p>
+    <p>伊勢志摩サミットの議長国会見場。</p>
+    <p>安倍首相が世界経済についてお話しした庭園があるよ！</p>
+    <p><strong>公式サイト：</strong><a href="https://www.hojoen.com" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/9CAFMtF4QADkzbZq6?g_st=ipc" target="_blank">MAP</a></p>
+    <div class="image-row">
+    <img src="img/hojoen1.jpg" alt="賢島宝生苑画像">
+    <img src="img/hojoen2.jpg" alt="賢島宝生苑画像">
+    </div>
+  </div>
+
+  <div class="activity-section" id="pool" data-tags="#1日目">
+    <h2>都リゾート ベイサイドテラス プール</h2>
+    <p>〈デイプール〉9:00～19:00</p>
+    <p>〈ナイトプール〉19:30～21:30</p>
+    <p>また、ぷーかぷかできたらいいね^_^</p>
+    <p><strong>公式サイト：</strong><a href="https://d33qqn1gw1wkus.cloudfront.net/bayside-terrace/topic/information/3359/" target="_blank">CHECK</a></p>
+    <div class="image-row">
+    <img src="img/pool1.jpg" alt="プール画像">
+    <img src="img/pool2.jpg" alt="プール画像">
+    </div> 
+  </div>
+
+  <div class="activity-section" id="stars" data-tags="#1日目">
+    <h2>都リゾート ベイサイドテラス 星空観察会</h2>
+    <p>星空案内人 宮本秀明さんによる星空観察会（20:30〜21:15）</p>
+    <p>天候不良時は「星のお話会」になります。</p>
+    <p><strong>公式サイト：</strong><a href="https://www.miyakohotels.ne.jp/bayside-terrace/facilities/starrysky/" target="_blank">CHECK</a></p>
+    <div class="image-row">
+    <img src="img/star1.jpg" alt="星空観察画像">
+    <img src="img/star2.jpg" alt="星空観察画像">
+    </div>
+  </div>
+
+  <div class="activity-section" id="isejingu" data-tags="#2日目 #観光スポット">
+    <h2>伊勢神宮</h2>
+    <p>日本で最も格式の高い神社。全国約8万社の中心的存在。</p>
+    <p>天皇が参拝する神社で、昔は一般人が内宮に入れなかったんだって。</p>
+    <p>それでもおかげ参りは江戸時代、</p>
+    <p>一生に一度行きたい旅行として大人気だったみたい</p>
+    <p>一生に一度、一緒に達成できるね^_^</p>
+    <p><strong>公式サイト：</strong><a href="https://www.isejingu.or.jp" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/ahNrv2YgjaKTUFbE7?g_st=ipc" target="_blank">MAP</a></p>
+    <div class="image-row">
+    <img src="img/isejingu1.jpg" alt="伊勢神宮画像">
+    <img src="img/isejingu2.jpg" alt="伊勢神宮画像">
+    </div>
+  </div>
+
+  <div class="activity-section" id="akafuku" data-tags="#2日目 #お土産 #カフェ">
+    <h2>赤福</h2>
+    <p>創業1707年、超ロングセラーの和スイーツ。</p>
+    <p>OPEN：5時〜17時（年中無休）</p>
+    <p>この旅の大本命、い〜っぱい食べようね！</p>
+    <p>季節限定のかき氷も美味しそう^_^</p>
+    <p><strong>公式サイト：</strong><a href="https://www.akafuku.co.jp/ise/honten/" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/a3GHP3mb5Fz9DcvWA?g_st=ipc" target="_blank">MAP</a></p>
+    <div class="image-row">
+    <img src="img/akafuku1.jpg" alt="赤福画像">
+    <img src="img/akafuku2.jpg" alt="赤福画像">
+    </div>
+  </div>
+
+  <div class="activity-section" id="udon" data-tags="#2日目 #昼食">
+    <h2>伊勢うどん ふくすけ</h2>
+    <p>もっちり太麺×自家製だしの濃厚タレ。</p>
+    <p>松阪牛肉、めかぶ、とろろ、たまご、海老天など</p>
+    <p>トッピングも楽しもう♪</p>
+    <p>営業時間：10:00〜17:00（季節で変動あり）</p>
+    <p><strong>公式サイト：</strong><a href="https://okageyokocho.com/main/tenpo/fukusuke/" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/mhCiA6ymU3G8kPmb8?g_st=ipc" target="_blank">MAP</a></p>
+    <div class="image-row">
+    <img src="img/udon1.jpg" alt="伊勢うどん画像">
+    <img src="img/udon2.jpg" alt="伊勢うどん画像">
+    </div>
+  </div>
+
+  <div class="activity-section" id="ebisei" data-tags="#2日目 #昼食">
+   <h2>えび勢</h2>
+   <p>伊勢海老を使った豪華な料理が楽しめる老舗。</p>
+   <p>プリプリの刺身や焼き物がとっても美味しそう！</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/92MFydyZsNNqo8ey8?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/ebisei1.jpg" alt="えび勢の料理画像">
+   <img src="img/ebisei2.jpg" alt="えび勢の料理画像">
+   </div>
+  </div>
+
+  <div class="activity-section" id="nikodo" data-tags="#2日目 #昼食 #お土産">
+   <h2>二光堂 寶来亭</h2>
+   <p>松坂牛のステーキ、牛丼、伊勢うどんやてこね寿司など、</p>
+   <p>伊勢の郷土料理が一度に楽しめる人気店。</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/SZaMF8CfK7MWzaiG7?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/nikodo1.jpg" alt="二光堂 寶来亭の画像">
+    <img src="img/nikodo2.jpg" alt="二光堂 寶来亭の画像">
+   </div>
+  </div>
+
+  <div class="activity-section" id="nikodo" data-tags="#2日目 #観光スポット #お土産">
+   <h2>VISON</h2>
+   <p>日本最大級の複合リゾート施設</p>
+   <p>グルメ・温泉・宿泊・ショッピング・アートなどが楽しめる</p>
+   <p>今注目の観光スポット</p>
+   <p><strong>公式サイト：</strong><a href="https://vison.jp" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/Rxm8N8eT9Jm8r7Wy9?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/VISON1.jpg" alt="VISONの画像">
+    <img src="img/VISON2.jpg" alt="VISONの画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="ebiya" data-tags="#2日目 #昼食 #お土産">
+   <h2>ゑびや大食堂</h2>
+   <p>新鮮な海鮮丼や季節の和食メニューが楽しめる♪</p>
+   <p>大人気の観光食堂。土産コーナーも充実！</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/X3zTbpJWm4RPLMEz9?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/ebiya1.jpg" alt="ゑびや大食堂画像">
+   <img src="img/ebiya2.jpg" alt="ゑびや大食堂画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="taiko" data-tags="#2日目 #食べ歩き #お土産">
+   <h2>太閤出世餅</h2>
+   <p>豊臣秀吉にちなんだ縁起の良いお餅。</p>
+   <p>赤福も良いけど、こっちも食べてみたい！</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/86A222Y2DMSKR7oK9?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/taiko1.jpg" alt="出世餅画像">
+   <img src="img/taiko2.jpg" alt="出世餅画像">
+   </div>
+  </div>
+
+  <div class="activity-section" id="taiko" data-tags="#2日目 #観光スポット #お土産">
+   <h2>ルーブル彫刻美術館</h2>
+   <p>本場パリのルーブル美術館公認のレプリカがズラリと並ぶ</p>
+   <p>美術館で涼んでみる？</p>
+   <p><strong>公式サイト：</strong><a href="https://www.louvre-m.com" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/XNhcpXsv1BvK7GeV7?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/ruburu1.jpg" alt="ルーブル彫刻美術館">
+   <img src="img/ruburu2.jpg" alt="ルーブル彫刻美術館">
+   </div>
+  </div>
+
+ <div class="activity-section" id="kadoya" data-tags="#2日目 #食べ歩き #お土産">
+   <h2>伊勢角屋麦酒 内宮前店</h2>
+   <p>地元のクラフトビールをその場で味わえる！</p>
+   <p>飲み比べや限定ビールも。おつまみも◎</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/PssH8bGPWGxPUsGbA?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/kadoya1.jpg" alt="伊勢角屋麦酒画像">
+    <img src="img/kadoya2.jpg" alt="伊勢角屋麦酒画像">
+    </div>
+  </div>
+
+ <div class="activity-section" id="haikarasan" data-tags="#2日目 #カフェ">
+   <h2>はいからさん</h2>
+   <p>昔ながらの甘味処。クリームあんみつや抹茶アイスが人気。</p>
+   <p>レトロな雰囲気がかわいい♡</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/PXztXV6S64JcksJ76?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/haikarasan1.jpg" alt="はいからさん画像">
+   <img src="img/haikarasan2.jpg" alt="はいからさん画像">
+   </div>
+  </div>
+
+  </div>
+   <div class="activity-section" id="haikarasan" data-tags="#2日目 #カフェ #観光スポット">
+   <h2>横山展望台</h2>
+   <p>英虞湾の絶景を一望できる志摩屈指のビュースポット</p>
+   <p>「天空カフェテラス」でドリンク片手にのんびり〜</p>
+   <p>灼熱かな、、、笑</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/R3Crm6Va257gqQtA7?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/yokoyama1.jpg" alt="横山展望台">
+   <img src="img/yokoyama2.jpg" alt="横山展望台">
+   </div>
+  </div>
+
+ <div class="activity-section" id="kawanishiya" data-tags="#2日目 #食べ歩き">
+   <h2>川西屋</h2>
+   <p>手焼きせんべいが人気の和菓子屋さん。店頭で焼きたてが楽しめる！</p>
+   <p>香ばしい香りがやだようみたい〜</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/i6Td9rMUehaiQmNdA?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/kawanishiya1.jpg" alt="川西屋画像">
+    <img src="img/kawanishiya2.jpg" alt="川西屋画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="morishita" data-tags="#2日目 #食べ歩き #お土産">
+   <h2>森下酒店 伊勢神宮前店</h2>
+   <p>伊勢志摩の地酒やクラフトビールなどが豊富に揃う酒屋さん。お土産にも◎</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/S1nSsxEwfab6eXUw7?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/morishita1.jpg" alt="森下酒店画像">
+   <img src="img/morishita2.jpg" alt="森下酒店画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="sarutahiko" data-tags="#2日目 #観光スポット">
+   <h2>猿田彦神社</h2>
+   <p>導きの神様として有名。</p>
+   <p>人生の道を良い方向に導いてくれると言われているパワースポット</p>
+   <p><strong>公式サイト：</strong><a href="https://www.sarutahikojinja.or.jp" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/3bBC7ZsG9Zx8V5rw6?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/sarutahiko1.jpg" alt="猿田彦神社画像">
+    <img src="img/sarutahiko2.jpg" alt="猿田彦神社画像">
+   </div>
+  </div>
+
+  <div class="activity-section" id="sarutahiko" data-tags="#2日目 #観光スポット">
+   <h2>志摩スペイン村</h2>
+   <p>三重にあるスペイン！</p>
+   <p>アトラクション、ショーやパレードも楽しそう</p>
+   <p><strong>公式サイト：</strong><a href="https://www.parque-net.com" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/SiM8oJhitoQnvVTT6?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/supein1.jpg" alt="志摩スペイン村">
+    <img src="img/supein2.jpg" alt="志摩スペイン村">
+   </div>
+  </div>
+
+ <div class="activity-section" id="buta" data-tags="#2日目 #食べ歩き">
+   <h2>豚捨</h2>
+   <p>明治創業の老舗牛肉店。コロッケやメンチカツは食べ歩きにぴったり！</p>
+   <p>レストランもあり。</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/Jn2Bh99kHAHXxeLb8?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/buta1.jpg" alt="豚捨画像">
+   <img src="img/buta2.jpg" alt="豚捨画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="shoyu" data-tags="#2日目 #食べ歩き #お土産">
+   <h2>伊勢醤油本舗</h2>
+   <p>試飲OKの醤油専門店。</p>
+   <p>オリジナルの醤油やドレッシング、醤油ソフトも楽しめる！</p>
+   <p>お土産に買って帰ろ♪</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/EmB9ZuNRr7fRKcGc8?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/shoyu1.jpg" alt="伊勢醤油本舗画像">
+    <img src="img/shoyu2.jpg" alt="伊勢醤油本舗画像">
+   </div> 
+  </div>
+
+ <div class="activity-section" id="honey" data-tags="#2日目 #食べ歩き #お土産">
+   <h2>はちみつ屋</h2>
+   <p>全国のはちみつを集めた専門店。</p>
+   <p>いつものはちみつ屋さんとは違いそう、、?</p>
+   <p>ハニポテが美味しそうなの！</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/fKwi9eDdMjKova5YA?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/hachimitsuya1.jpg" alt="はちみつ屋画像">
+    <img src="img/hachimitsuya2.jpg" alt="はちみつ屋画像">
+   </div>
+  </div>
+
+  <div class="activity-section" id="honey" data-tags="#2日目 #観光スポット #お土産">
+   <h2>おやつタウン</h2>
+   <p>ベビースターラーメンをテーマにした屋内型テーマパーク</p>
+   <p>室内だから雨でも安心</p>
+   <p>巨大アスレチックや滑り台で遊んじゃお！</p>
+   <p><strong>公式サイト：</strong><a href="https://oyatsu-town.com" target="_blank">CHECK</a><strong>    📍:</strong><a href="https://maps.app.goo.gl/pECF7zJceDKMKHKe8?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/oyatsu1.jpg" alt="おやつタウン">
+    <img src="img/oyatsu2.jpg" alt="おやつタウン">
+   </div>
+  </div>
+
+ <div class="activity-section" id="katsu" data-tags="#2日目 #食べ歩き">
+   <h2>勝（KATSU）</h2>
+   <p>衣がサクッとジューシーなとんかつ専門店。</p>
+   <p>定食スタイルでボリューム満点！</p>
+   <p>食べ歩きのひと口カツが良さそう！</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/7kwwzJV6aN9thc6D8?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/katsu1.jpg" alt="勝 とんかつ画像">
+    <img src="img/katsu2.jpg" alt="勝 とんかつ画像">
+   </div> 
+  </div>
+
+ <div class="activity-section" id="kinoshita" data-tags="#2日目 #カフェ">
+   <h2>木下茶屋</h2>
+   <p>伊勢茶を使ったスイーツが人気のお茶屋カフェ。</p>
+   <p>抹茶ソフトやわらび餅が絶品。</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/hFfZrKTS4qzoAkuV7?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+   <img src="img/kinoshita1.jpg" alt="木下茶屋画像">
+   <img src="img/kinoshita2.jpg" alt="木下茶屋画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="imonne" data-tags="#2日目 #食べ歩き">
+   <h2>いもんね</h2>
+   <p>日本初のジェラ餅</p>
+   <p>〜和と洋の伝統が融合した革新的な新感覚スイーツ〜</p>
+   <p>ほっこり甘くて優しい味のスイートポテトが大人気！</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/8VLqb8nyYZcNLVAq6?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/imonne1.jpg" alt="いもんね画像">
+    <img src="img/imonne2.jpg" alt="いもんね画像">
+   </div> 
+  </div>
+
+ <div class="activity-section" id="isuzugawa" data-tags="#2日目 #カフェ">
+   <h2>五十鈴川カフェ</h2>
+   <p>五十鈴川を眺めながらゆったりできるカフェ。</p>
+   <p>珈琲やケーキでちょっと休憩にぴったり。</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/wRBjU2ymsLLiR5KQ8?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/isuzugawa1.jpg" alt="五十鈴川カフェ画像">
+    <img src="img/isuzugawa2.jpg" alt="五十鈴川カフェ画像">
+   </div>
+  </div>
+
+ <div class="activity-section" id="ebimaru" data-tags="#2日目 #昼食">
+   <h2>海老丸</h2>
+   <p>豪快な海老天丼や刺身が味わえる和食処。</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/SubNzfdZ6kcTiWof9?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/ebimaru1.jpg" alt="海老丸画像">
+    <img src="img/ebimaru2.jpg" alt="海老丸画像">
+   </div> 
+  </div>
+
+ <div class="activity-section" id="saiya" data-tags="#2日目 #昼食">
+   <h2>蕎麦切り 才屋</h2>
+   <p>本格手打ちそばが味わえる名店。</p>
+   <p>香り高く、つるっとしたのどごしの一品</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/1B57mkY4WTgu3k9b6?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/saiya1.jpg" alt="才屋画像">
+    <img src="img/saiya2.jpg" alt="才屋画像">
+   </div> 
+  </div>
+
+  <div class="activity-section" id="saiya" data-tags="#2日目 #昼食">
+   <h2>横丁そば小西湖</h2>
+   <p>コシのある細めのおそばが味わえる、知る人ぞ知る横丁グルメ。</p>
+   <p>あっさりした出汁とやさしい味わいで、歩き疲れた体にほっと染みる一杯</p>
+   <p>📍:</strong><a href="https://maps.app.goo.gl/1B57mkY4WTgu3k9b6?g_st=ipc" target="_blank">MAP</a></p>
+   <div class="image-row">
+    <img src="img/konishiko1.jpg" alt="小西湖画像">
+    <img src="img/konishiko2.jpg" alt="小西湖画像">
+   </div> 
+  </div>
+
+  <a href="#" class="back-to-top">↑ UP</a>
+
+  <footer>
+    <p>© 2025 Mie Birthday Trip</p>
+  </footer>
+  <script>
+  const tagButtons = document.querySelectorAll('.tag-btn');
+  const sections = document.querySelectorAll('.activity-section');
+
+  tagButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // アクティブ切り替え
+      tagButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const tag = button.dataset.tag;
+
+      sections.forEach(section => {
+        const tags = section.dataset.tags || '';
+        if (tag === 'all' || tags.includes(tag)) {
+          section.style.display = '';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
