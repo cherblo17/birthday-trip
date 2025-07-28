@@ -3,7 +3,6 @@ body {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 600;
   background-image: url("img/akahuku-bg.jpg");
-  background-size: cover; /* 全画面に広げる */
   background-position: center;
   background-attachment: fixed; /* スクロールしても背景固定 */
   color: #333;
