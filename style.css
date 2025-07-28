@@ -3,8 +3,9 @@ body {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 600;
   background-image: url("img/akahuku-bg.jpg");
+  background-size: cover
   background-position: center;
-  background-attachment: fixed; /* スクロールしても背景固定 */
+  background-attachment: fixed;
   color: #333;
 }
 
@@ -78,7 +79,7 @@ nav a:last-child::after {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1em;
-  background: rgba(240, 240, 240, 0.8); /* ← ここで白背景＋透明度 */
+  background: rgba(240, 240, 240, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
@@ -95,7 +96,7 @@ nav a:last-child::after {
 }
 
 header {
-  background-image: url('img/1175_11_org.jpg'); /* 画像名に合わせました */
+  background-image: url('img/1175_11_org.jpg');
   background-size: cover;
   background-position: center;
   color: white; /* 文字は白 */
@@ -104,7 +105,6 @@ header {
   position: relative;
 }
 
-/* 文字が見やすくなる半透明の黒いフィルター */
 header::before {
   content: "";
   position: absolute;
