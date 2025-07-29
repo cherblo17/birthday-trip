@@ -189,3 +189,10 @@ header p {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+.image-row img {
+  width: 48%;
+  min-width: 160px; /* スマホでも横並びキープしたい最小幅 */
+  border-radius: 10px;
+  height: auto;
+}
