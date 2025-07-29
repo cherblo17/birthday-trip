@@ -163,12 +163,12 @@ header p {
 }
 
 .image-row img {
-  max-width: 48%; /* ←これで画像が左右2枚並ぶサイズに */
+  max-width: 40%; /* ←これで画像が左右2枚並ぶサイズに */
   border-radius: 10px;
   height: auto;
 }
 .activity-section .image-row img {
-  max-width: 48% !important;
+  max-width: 40% !important;
 }
 
 .message-box {
