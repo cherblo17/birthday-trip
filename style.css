@@ -190,9 +190,15 @@ header p {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.image-row img {
-  width: 48%;
-  min-width: 160px; /* スマホでも横並びキープしたい最小幅 */
-  border-radius: 10px;
-  height: auto;
+@media (max-width: 600px) {
+  .image-row {
+    flex-wrap: nowrap;  /* 折り返さない */
+    overflow-x: auto;   /* 横スクロールできるようにする */
+  }
+  .image-row img {
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: none;
+    margin-right: 10px;
+  }
 }
