@@ -4,8 +4,9 @@ body {
   font-weight: 600;
   background-image: url("img/akahuku-big.jpg");
   background-size: cover
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #333;
 }
 
@@ -200,5 +201,12 @@ header p {
     width: 80%;
     max-width: none;
     margin-right: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* 固定ではなく通常スクロールに変更（バグ回避） */
   }
 }
