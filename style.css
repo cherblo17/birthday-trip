@@ -17,7 +17,7 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("img/akahuku-big.jpg");
+  background-image: url("img/akafuku-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
