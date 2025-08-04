@@ -4,29 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>メッセージ｜MIE BIRTHDAY TRIP</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
   <style>
+    body {
+      margin: 0;
+      font-family: 'Yomogi', 'M PLUS 1p', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-image: url('img/akahuku-big.jpg'); /* 必要に応じて変更 */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    nav {
+      background: #e0e0e0;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
     .message-box {
       max-width: 700px;
       margin: 40px auto;
-      background: white;
-      padding: 30px;
+      background-color: #fdf6e3;
+      background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+      background-repeat: repeat;
+      background-blend-mode: multiply;
+      padding: 40px 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      font-family: "serif", "Noto Serif JP", serif;
-      line-height: 1.8;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       font-size: 1.1em;
-      color: #000000;
+      color: #333;
+      border: 1px solid #e0e0d5;
+      position: relative;
     }
+
     .message-box h2 {
-      font-size: 1.4em;
-      text-align: left;
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+      border-left: 4px solid #ff80ab;
+      padding-left: 0.6em;
     }
-    .message-box .signature {
+
+    .message-content p span {
+      display: block;
+      margin-bottom: 0.6em;
+    }
+
+    .message-content.hidden {
+      filter: blur(5px);
+      opacity: 0.4;
+      transition: all 0.6s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .message-content.hidden::after {
+      content: "タップして読む";
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255,255,255,0.85);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 1em;
+      color: #444;
+      pointer-events: none;
+      font-family: 'M PLUS 1p', sans-serif;
+    }
+
+    .message-content.revealed {
+      filter: none;
+      opacity: 1;
+      cursor: default;
+    }
+
+    .signature {
       margin-top: 40px;
       text-align: right;
       font-size: 1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f9f9f9;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
@@ -36,7 +116,7 @@
     <p>〜お手紙をここに残すよ〜</p>
   </header>
 
-   <nav>
+  <nav>
     <a href="index.html">TOP</a>
     <a href="schedule.html">SCHEDULE</a>
     <a href="hotel.html">HOTEL</a>
@@ -48,45 +128,44 @@
   </nav>
 
   <main>
-  <div class="message-box">
-    <h2><span>波瑠さんへ</span></h2>
+    <div class="message-box">
+      <h2><span>波瑠さんへ</span></h2>
 
-    <div class="message-content hidden" onclick="revealMessage(this)">
-      <p>
-        <span>お誕生日おめでとう！</span><br>
-        <span>今年もこうしてお祝いできることを</span><br>
-        <span>とっても嬉しく思います。</span><br><br>
+      <div class="message-content hidden" onclick="revealMessage(this)">
+        <p>
+          <span>お誕生日おめでとう！</span><br>
+          <span>今年もこうしてお祝いできることを</span><br>
+          <span>とっても嬉しく思います。</span><br><br>
 
-        <span>いつも楽しませてくれる、</span><br>
-        <span>喜ばせてくれる波瑠さんに</span><br>
-        <span>感謝の気持ちがいっぱいです。</span><br>
-        <span>私も波瑠さんを幸せにできるように</span><br>
-        <span>もっともっと頑張るよ！</span><br><br>
+          <span>いつも楽しませてくれる、</span><br>
+          <span>喜ばせてくれる波瑠さんに</span><br>
+          <span>感謝の気持ちがいっぱいです。</span><br>
+          <span>私も波瑠さんを幸せにできるように</span><br>
+          <span>もっともっと頑張るよ！</span><br><br>
 
-        <span>波瑠さんがいるから</span><br>
-        <span>頑張れることがいっぱいあります。</span><br>
-        <span>一緒に切磋琢磨して</span><br>
-        <span>もっともっと成長しようね。</span><br><br>
+          <span>波瑠さんがいるから</span><br>
+          <span>頑張れることがいっぱいあります。</span><br>
+          <span>一緒に切磋琢磨して</span><br>
+          <span>もっともっと成長しようね。</span><br><br>
 
-        <span>だいすき♡</span><br>
-        <span>これからもよろしくね</span><br><br>
+          <span>だいすき♡</span><br>
+          <span>これからもよろしくね</span><br><br>
 
-        <span>咲葉より</span>
-      </p>
+          <span>咲葉より</span>
+        </p>
+      </div>
     </div>
-  </div>
-　</main>
+  </main>
 
   <footer>
     <p>&copy; Mie Birthday Trip</p>
   </footer>
 
-<script>
-  function revealMessage(el) {
-    el.classList.remove("hidden");
-    el.classList.add("revealed");
-  }
-</script>
-
+  <script>
+    function revealMessage(el) {
+      el.classList.remove("hidden");
+      el.classList.add("revealed");
+    }
+  </script>
 </body>
 </html>
