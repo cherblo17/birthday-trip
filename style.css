@@ -225,3 +225,18 @@ header p {
   }
 }
 
+.message-box {
+  background-color: #fdf6e3;
+  background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Yomogi', 'M PLUS 1p', sans-serif;
+  font-size: 1.1em;
+  color: #333;
+  border: 1px solid #e0e0d5;
+  max-width: 700px;
+  margin: 40px auto;
+}
