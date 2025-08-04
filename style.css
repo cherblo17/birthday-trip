@@ -241,3 +241,7 @@ header p {
   border: 1px solid #e5e1d3;
   position: relative;
 }
+.message-box {
+  /* 他のスタイルはそのままでOK */
+  font-family: 'Yomogi', 'Kiwi Maru', 'M PLUS 1p', sans-serif;
+}
