@@ -21,6 +21,24 @@
       background-position: center;
       color: white;
     }
+    
+    header {
+      background-image: url('img/1175_11_org.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white; /* 文字は白 */
+      padding: 4em 1em;
+      text-align: center;
+      position: relative;
+　　　}
+
+　　　header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4); /* 黒いフィルター（透明度40%） */
+      z-index: 0;
+　　　}
 
     nav {
       background: #e0e0e0;
